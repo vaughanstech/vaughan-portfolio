@@ -9,8 +9,7 @@
     "preview": "astro preview",
     "clean": "rimraf dist",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx,.astro .",
-    "build-types": "tsc --noEmit --pretty",
-    "prepare": "husky install"
+    "build-types": "tsc --noEmit --pretty"
   },
   "devDependencies": {
     "@astrojs/react": "^1.0.0",
@@ -26,7 +25,7 @@
     "@typescript-eslint/parser": "^5.33.1",
     "astro": "1.0.6",
     "astro-eslint-parser": "^0.5.1",
-    "astro-imagetools": "^0.2.7",
+    "astro-imagetools": "^0.6.10",
     "astro-robots-txt": "^0.3.7",
     "eslint": "^8.22.0",
     "eslint-config-airbnb-base": "^15.0.0",
@@ -40,7 +39,6 @@
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "eslint-plugin-tailwindcss": "^3.6.0",
     "eslint-plugin-unused-imports": "^2.0.0",
-    "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "prettier-plugin-astro": "^0.5.0",
