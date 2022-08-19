@@ -1,9 +1,14 @@
 ---
 import Base from "../templates/Base.astro";
 import { AppConfig } from "../utils/AppConfig";
+import { Hero } from "../partials/Hero";
+import { ProjectList } from "../partials/ProjectsList";
 
 const { title } = AppConfig;
 const { description } = AppConfig;
 ---
 
-<Base head={{ title, description }} />
+<Base head={{ title, description }}>
+    <Hero />
+    <ProjectList />
+</Base>
