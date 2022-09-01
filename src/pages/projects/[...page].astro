@@ -16,11 +16,11 @@ type GetStaticPaths = {
 };
 
 export async function getStaticPaths({ paginate }: GetStaticPaths) {
-    const allPosts = await Astro.glob<IFrontmatter>("./*.md");
-    const sortedPosts = sortByDate(allPosts);
+    const allProjects = await Astro.glob<IFrontmatter>("./*.md");
+    const sortedProjects = sortByDate(allProjects);
 
-    // Return a paginated collection of paths for all posts
-    return paginate(sortedPosts, { pageSize: 6 });
+    // Return a paginated collection of paths for all projects
+    return paginate(sortedProjects, { pageSize: 6 });
 }
 
 interface Props {
@@ -29,16 +29,16 @@ interface Props {
 
 const { page } = Astro.props as Props;
 const titleSuffix = ` - ${AppConfig.site_name}`;
-const titleBase = `Blog page ${page.currentPage}`;
+const titleBase = `Base page ${page.currentPage}`;
 const title = titleBase + titleSuffix;
-const description = "List of all posts";
+const description = "List of all projects";
 ---
 
 <Base head={{ title, description }}>
     <Section>
         <PaginationHeader
-            title="Michael's Posts"
-            description="Random informative posts of things I learn along my engineering journey"
+            title="Michael's Projects"
+            description="Engineering projects showcase and reference. Feel free to try them yourself"
         />
     </Section>
 
