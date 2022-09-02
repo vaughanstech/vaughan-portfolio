@@ -1,0 +1,17 @@
+---
+import Base from "../templates/Base.astro";
+import { AppConfig } from "../utils/AppConfig";
+import { PaginationHeader, Section } from "astro-boilerplate-components";
+
+const { title } = AppConfig;
+const { description } = AppConfig;
+---
+
+<Base head={{ title, description }}>
+  <Section>
+    <PaginationHeader
+      title="Michael Vaughan"
+      description="Creator of Vaughan's Tech"
+    />
+  </Section>
+</Base>

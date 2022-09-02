@@ -14,8 +14,11 @@ const Hero = () => (
       }
       description={
         <>
-          This is a portfolio site for Michael Vaughan. Feel free to explore all
-          of my projects and interests
+          This is a portfolio site for{" "}
+          <a className="text-cyan-400 hover:underline" href="/about">
+            Michael Vaughan
+          </a>
+          . Feel free to explore all of my projects and interests
         </>
       }
       avatar={<></>}
