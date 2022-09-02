@@ -12,7 +12,7 @@ imgSrc: "/astro-logo.png"
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Astro Framework attempts to get rid of all this framework churn by allowing you to be able to build websites using whatever front-end framework you want, where ever you want, while at the same time making it a pretty easy to use framework. This is coming from someone who never really has been big on front-end web development.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Here is a link to my GitHub repository where I keep the code for Vaughan's Tech. While looking take note of how simple the syntax is to look at. For instance the home page (index.astro) looks like this:
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Here is a link to my [GitHub repository](https://github.com/vaughanstech/vaughan-portfolio) where I keep the code for Vaughan's Tech. While looking take note of how simple the syntax is to look at. For instance the home page (index.astro) looks like this:
 
 ```typescript
 ---
