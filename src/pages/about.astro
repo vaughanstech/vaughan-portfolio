@@ -2,6 +2,7 @@
 import Base from "../templates/Base.astro";
 import { AppConfig } from "../utils/AppConfig";
 import { PaginationHeader, Section } from "astro-boilerplate-components";
+import myPic from "/my_pic.jpg";
 
 const { title } = AppConfig;
 const { description } = AppConfig;
@@ -13,5 +14,47 @@ const { description } = AppConfig;
       title="Michael Vaughan"
       description="Creator of Vaughan's Tech"
     />
+    <div class="container mx-auto bg-gray-500 w-1/4 p-4 relative">
+      <img src={myPic} alt="Michael's Picture" class="w-full h-auto" />
+    </div>
+  </Section>
+  <Section title={"About Me"}>
+    <p class="indent-8">
+      Hello, my name is Michael Vaughan, if you couldn't already tell with me
+      putting my name on everything :). With interests in Electrical Engineering
+      and Computer Science, I found it only reasonable to study Computer
+      Engineering in school. I still find that my thirst for knowledge has still
+      not been quenched. My current technical topics of interests include data
+      science and engineering, embedded systems, and RF/communications
+      engineering.
+    </p>
+  </Section>
+  <Section title={"About this Site"}>
+    <p class="indent-8">
+      I created this personal website to showcase and demonstrate a lot of the
+      projects that I work on. I also learn a lot when working on these projects
+      and I want to share and explain that knowledge through blog posts that
+      will also be availble on this site. I built this site using the AstroJS
+      framework, utilizing TypeScript for better type safety. If you want to
+      know more about how I used this framework to build this site, check out
+      its Git repository. While you're there, check out some of my other GitHub
+      repositories.
+    </p>
+  </Section>
+  <Section title={"Contact Me"}>
+    <p class="indent-8">
+      The best way to get in contact with me with questions is on{" "}
+      <a
+        class="text-cyan-400 hover:underline"
+        href="https://www.linkedin.com/in/michael-vaughan-86267b1b6/"
+        >LinkedIn
+      </a>.{" "}
+      <a
+        class="text-green-500 hover:underline"
+        href="https://github.com/vaughanstech"
+        >Github
+      </a> is also another option, however, I would recommend LinkedIn to hear back
+      the fastest.
+    </p>
   </Section>
 </Base>
