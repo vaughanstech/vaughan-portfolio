@@ -1,30 +1,30 @@
 ---
 import {
-    BlogGallery,
-    FrontmatterPage,
-    IFrontmatter,
-    NewerOlderPagination,
-    PaginationHeader,
-    Section,
+  BlogGallery,
+  FrontmatterPage,
+  IFrontmatter,
+  NewerOlderPagination,
+  PaginationHeader,
+  Section,
 } from "astro-boilerplate-components";
 import Base from "../../templates/Base.astro";
 import { AppConfig } from "../../utils/AppConfig";
 import { sortByDate } from "../../utils/Posts";
 
 type GetStaticPaths = {
-    paginate: any;
+  paginate: any;
 };
 
 export async function getStaticPaths({ paginate }: GetStaticPaths) {
-    const allProjects = await Astro.glob<IFrontmatter>("./*.md");
-    const sortedProjects = sortByDate(allProjects);
+  const allProjects = await Astro.glob<IFrontmatter>("./*.md");
+  const sortedProjects = sortByDate(allProjects);
 
-    // Return a paginated collection of paths for all projects
-    return paginate(sortedProjects, { pageSize: 6 });
+  // Return a paginated collection of paths for all projects
+  return paginate(sortedProjects, { pageSize: 6 });
 }
 
 interface Props {
-    page: FrontmatterPage;
+  page: FrontmatterPage;
 }
 
 const { page } = Astro.props as Props;
@@ -35,18 +35,18 @@ const description = "List of all projects";
 ---
 
 <Base head={{ title, description }}>
-    <Section>
-        <PaginationHeader
-            title="Michael's Projects"
-            description="Engineering projects showcase and reference. Feel free to try them yourself"
-        />
-    </Section>
+  <Section>
+    <PaginationHeader
+      title="Michael's Projects"
+      description="Engineering projects showcase and reference. Feel free to try them yourself"
+    />
+  </Section>
 
-    <Section>
-        <BlogGallery postList={page.data} />
-    </Section>
+  <Section>
+    <BlogGallery postList={page.data} />
+  </Section>
 
-    <Section>
-        <NewerOlderPagination page={page} />
-    </Section>
+  <Section>
+    <NewerOlderPagination page={page} />
+  </Section>
 </Base>
