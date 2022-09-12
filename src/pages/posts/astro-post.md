@@ -6,11 +6,17 @@ pubDate: 2022-09-03T00:00:00Z
 imgSrc: "/astro-logo.png"
 ---
 
+Website: [astro.build](https://astro.build/ "astro.build")
+
+Docs: [docs.astro.build](https://docs.astro.build/en/getting-started/ "docs.astro.build")
+
 # Introduction
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Astro prides itself in being an **all-in-one-framework for building fast**, content-focused websites. It's the first sentence when you load the _why Astro_ page on their webpage. To build webpages on the internet in the modern age, you pretty much have to use JavaScript, and there's no way of hiding from it. One of JavaScript's main criticisms, syntax aside, is its massive amount of frameworks that it has for front-end, back-end, and full-stack. For me, it was pretty overwhelming trying to find a framework that suited my needs and I spent countless hours on the internet scrolling through web development forums trying to find the best JavaScript framework for my site. This can quickly become exhausting as you will need to learn so many frameworks just to create one website and when you finally do decide on a framework and start building your website, sooner or later you will develop a bad case of **FOMO** (Fear of Missing Out) when a new shiny JS framework starts to show up.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Astro Framework attempts to get rid of all this framework churn by allowing you to be able to build websites using whatever front-end framework you want, where ever you want, while at the same time making it a pretty easy to use framework. This is coming from someone who never really has been big on front-end web development.
+
+# Working with Astro
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Here is a link to my [GitHub repository](https://github.com/vaughanstech/vaughan-portfolio) where I keep the code for Vaughan's Tech. While looking take note of how simple the syntax is to look at. For instance the home page (index.astro) looks like this:
 
@@ -103,5 +109,7 @@ Now you're probably wondering. "Well, if all you're going to be using is **React
 
 As I've mentioned before, I've never been good at web development, especially the design side of it. I am much more comfortable using using **Markdown** when creating styles on text files and with Astro, you can create a **Markdown** instance to use in your website to serve **Markdown** files. In fact I've written this whole blog post in **Markdown** take a look:
 ```
+
+# Conclusion
 
 There is even more to the Astro framework that if I were to try to explain it all, you'd be reading all day. So my best advice to you or anyone who wants to get into web development but is afraid of all the big bad frameworks, is to check out the [Astro docs](https://docs.astro.build/en/getting-started/ "Astro docs") and startup a project yourself!
