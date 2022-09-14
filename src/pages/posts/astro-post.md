@@ -10,6 +10,19 @@ Website: [astro.build](https://astro.build/ "astro.build")
 
 Docs: [docs.astro.build](https://docs.astro.build/en/getting-started/ "docs.astro.build")
 
+---
+
+<h2 className="text-center">Table of Contents</h2>
+<div className="text-center">
+  <a href="#introduction">Introduction</a>
+  <br>
+  <a href="#working-with-astro">Working with Astro</a>
+  <br>
+  <a href="#conclusion">Conclusion</a>
+</div>
+
+---
+
 # Introduction
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Astro prides itself in being an **all-in-one-framework for building fast**, content-focused websites. It's the first sentence when you load the _why Astro_ page on their webpage. To build webpages on the internet in the modern age, you pretty much have to use JavaScript, and there's no way of hiding from it. One of JavaScript's main criticisms, syntax aside, is its massive amount of frameworks that it has for front-end, back-end, and full-stack. For me, it was pretty overwhelming trying to find a framework that suited my needs and I spent countless hours on the internet scrolling through web development forums trying to find the best JavaScript framework for my site. This can quickly become exhausting as you will need to learn so many frameworks just to create one website and when you finally do decide on a framework and start building your website, sooner or later you will develop a bad case of **FOMO** (Fear of Missing Out) when a new shiny JS framework starts to show up.

@@ -8,7 +8,7 @@ import robotsTxt from "astro-robots-txt";
 export default defineConfig({
   markdown: {
     shikiConfig: {
-      theme: "monokai",
+      theme: "github-dark",
     },
   },
   integrations: [react(), tailwind({}), sitemap(), robotsTxt()],

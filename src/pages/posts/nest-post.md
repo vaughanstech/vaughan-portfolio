@@ -2,19 +2,32 @@
 layout: "../../templates/BasePost.astro"
 title: Why I Use NestJS
 description: Blog on why I chose the NestJS backend framework to create the Transformers API
-pubDate: 2022-09-12T00:00:00Z
+pubDate: 2022-09-13T00:00:00Z
 imgSrc: "/nest-logo-dark.png"
 ---
 
-Website: [nestjs.com](https://nestjs.com/ "nestjs.com")
+**Website**: [nestjs.com](https://nestjs.com/ "nestjs.com")
 
-Docs: [docs.nestjs.com](https://docs.nestjs.com/ "docs.nestjs.com")
+**Docs**: [docs.nestjs.com](https://docs.nestjs.com/ "docs.nestjs.com")
+
+---
+
+<h2 className="text-center">Table of Contents</h2>
+<div className="text-center">
+  <a href="#introduction">Introduction</a>
+  <br>
+  <a href="#working-with-nestjs">Working with NestJS</a>
+  <br>
+  <a href="#conclusion">Conclusion</a>
+</div>
+
+---
 
 # Introduction
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Since I described in my last post my go-to frontend framework that I used on my personal website. I would now like to take a moment, and talk about my go-to backend framework that I chose to use for one of my backend projects the [Transformers API](https://github.com/vaughanstech/transformers-api "Transformers API").
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Since I described in my last post my go-to frontend framework that I used on my personal website. I would now like to take a moment, and talk about my go-to backend framework that I chose to use for one of my backend projects the **[Transformers API](https://github.com/vaughanstech/transformers-api "Transformers API")**.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NestJS is a backend framework whose main motto is _"A progressive Node.JS framework for building efficient, reliable and scalable server-side applications."_ A lot of people like to refer to NestJS as _Angular for the backend_ and rightfully so. It takes the Model, View, Controller (MVC) boilerplate code and transitions it into a backend framework that allows for easily scalable APIs. I was never a big fan of Angular as a frontend framework as it generates a **ton** of boilerplate code to do simple things and I regard it as more of an enterprise grade frontend framework, one that I see a lot fo larger companies use for their larger scale apps.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NestJS is a backend framework whose main motto is _"A progressive Node.JS framework for building efficient, reliable and scalable server-side applications."_ A lot of people like to refer to NestJS as _Angular for the backend_ and rightfully so. It takes the Model, View, Controller (MVC) boilerplate code and transitions it into a backend framework that allows for easily scalable APIs. I was never a big fan of Angular as a frontend framework as it generates a **ton** of boilerplate code to do simple things and I regard it as more of an enterprise grade frontend framework, one that I see a lot of larger companies use for their larger scale apps.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Although I do not enjoy Angular for its use of the MVC code style in the frontend, I really enjoy it in the backend, which NestJS has successfully done. Of course, it does still generate a lot of that boilerplate code that I'm afraid of in Angular, but I feel like it is a lot more necessary in the backend as when you are constructing a lot of the logic for a backend app it can become pretty confusing and hard to manage as the app grows in complexity.
 

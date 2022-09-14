@@ -26,7 +26,7 @@ const ProjectList = () => (
         description="Fun API used for including your favorite 'robots in disguise' in your project"
         link="http://localhost:3000/projects/transformer-api"
         img={{
-          src: "../../public/transformers-logo.png",
+          src: "/transformers-logo.png",
           alt: "Image related to project",
         }}
         category={

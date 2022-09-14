@@ -5,7 +5,7 @@ import Base from "./Base.astro";
 import { BlogPost } from "../partials/BlogPost";
 
 export interface Props {
-    content: IFrontmatter;
+  content: IFrontmatter;
 }
 
 const { content } = Astro.props as Props;
@@ -13,7 +13,7 @@ const title = `${content.title} - ${AppConfig.site_name}`;
 ---
 
 <Base head={{ title, description: content.description }}>
-    <BlogPost frontmatter={content}>
-        <slot />
-    </BlogPost>
+  <BlogPost frontmatter={content}>
+    <slot />
+  </BlogPost>
 </Base>
