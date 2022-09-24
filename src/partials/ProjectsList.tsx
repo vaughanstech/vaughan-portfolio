@@ -22,6 +22,26 @@ const ProjectList = () => (
   >
     <div className="flex flex-col gap-6">
       <Project
+        name="Homemade Radios"
+        description="Radio frequency engineering using the nrf24l01 module on Arduino and Raspberry Pi boards"
+        link="http://localhost:3000/projects/nrf24l01"
+        img={{
+          src: "/nrf24l01.png",
+          alt: "Image related to project",
+        }}
+        category={
+          <>
+            <Tags color={ColorTags.SKY}>Arduino</Tags>
+            <Tags color={ColorTags.RED}>Raspberry Pi</Tags>
+            <Tags color={ColorTags.YELLOW}>Python</Tags>
+            <Tags color={ColorTags.BLUE}>C++</Tags>
+          </>
+        }
+      />
+    </div>
+    <br></br>
+    <div className="flex flex-col gap-6">
+      <Project
         name="Transformers API"
         description="Fun API used for including your favorite 'robots in disguise' in your project"
         link="http://localhost:3000/projects/transformer-api"
